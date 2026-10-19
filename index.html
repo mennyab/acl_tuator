@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>העמוד הראשון שלי</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, "Segoe UI", sans-serif;
+      background: #f0f4f8;
+      color: #1f2933;
+    }
+    h1 {
+      margin-bottom: 24px;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #16a34a;
+      min-height: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>העמוד הראשון שלי</h1>
+  <button id="btn">לחץ כאן</button>
+  <p id="message"></p>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", function () {
+      document.getElementById("message").textContent = "הצלחנו";
+    });
+  </script>
+</body>
+</html>
